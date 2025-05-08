@@ -7,7 +7,7 @@ SnippingTool is a simple and intuitive screen capture tool that allows you to se
 To use the SnippingTool, you just need to initialize the tool and call the `capture()` method. Here's a basic example of how to use it:
 
 ```python
-from snippingTool import SnippingTool
+from snippingtool import SnippingTool
 
 # Create an instance of SnippingTool
 snipping = SnippingTool()

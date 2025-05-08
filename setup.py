@@ -1,9 +1,16 @@
 from setuptools import setup, find_packages
+import pathlib
+
+current_dir = pathlib.Path(__file__).parent
+readme_path = current_dir / "README.md"
+long_description = readme_path.read_text(encoding="utf-8")
 
 setup(
     name="snippingtool",
-    version="0.1.0",
+    version="0.2.0",
     description="A simple Python snipping tool using Tkinter and PIL",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author="RannStudio",
     url="https://github.com/rann-studio/snippingtool",
     project_urls={
@@ -17,4 +24,13 @@ setup(
         "pywin32",
     ],
     python_requires='>=3.6',
+    license="MIT",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: Microsoft :: Windows",
+        "Topic :: Multimedia :: Graphics :: Capture",
+        "Intended Audience :: End Users/Desktop",
+    ],
+    include_package_data=True,
 )
